@@ -32,7 +32,7 @@ alertmanager:
   ## alertmanager container image
   ##
   image:
-    repository: prom/alertmanager
+    repository: nenya.local:5000/iop/prom/alertmanager
     tag: v0.15.2
     pullPolicy: IfNotPresent
 
@@ -217,7 +217,7 @@ configmapReload:
   ## configmap-reload container image
   ##
   image:
-    repository: jimmidyson/configmap-reload
+    repository: nenya.local:5000/iop/jimmidyson/configmap-reload
     tag: v0.2.2
     pullPolicy: IfNotPresent
 
@@ -252,7 +252,7 @@ initChownData:
   ## initChownData container image
   ##
   image:
-    repository: busybox
+    repository: nenya.local:5000/iop/busybox
     tag: latest
     pullPolicy: IfNotPresent
 
@@ -273,7 +273,7 @@ kubeStateMetrics:
   ## kube-state-metrics container image
   ##
   image:
-    repository: quay.io/coreos/kube-state-metrics
+    repository: nenya.local:5000/iop/quay.io/coreos/kube-state-metrics
     tag: v1.4.0
     pullPolicy: IfNotPresent
 
@@ -362,7 +362,7 @@ nodeExporter:
   ## node-exporter container image
   ##
   image:
-    repository: prom/node-exporter
+    repository: nenya.local:5000/iop/prom/node-exporter
     tag: v0.15.2
     pullPolicy: IfNotPresent
 
@@ -460,7 +460,7 @@ server:
   ## Prometheus server container image
   ##
   image:
-    repository: prom/prometheus
+    repository: nenya.local:5000/iop/prom/prometheus
     tag: v2.4.3
     pullPolicy: IfNotPresent
 
@@ -682,7 +682,7 @@ pushgateway:
   ## pushgateway container image
   ##
   image:
-    repository: prom/pushgateway
+    repository: nenya.local:5000/iop/prom/pushgateway
     tag: v0.5.2
     pullPolicy: IfNotPresent
 

@@ -18,4 +18,4 @@ ENABLE_MIRROR_REGISTRY: true
 REG_MIRRORS: '["https://dockerhub.azk8s.cn", "https://docker.mirrors.ustc.edu.cn"]'
 
 # 信任的HTTP仓库
-INSECURE_REG: '["127.0.0.1/8"]'
+INSECURE_REG: '["127.0.0.1/8", "hub.local:9080", "nenya.local:5000"]'

@@ -109,7 +109,7 @@ spec:
             topologyKey: kubernetes.io/hostname
       containers:
       - name: coredns
-        image: coredns/coredns:{{ corednsVer }}
+        image: nenya.local:5000/iop/coredns/coredns:{{ corednsVer }}
         imagePullPolicy: IfNotPresent
         resources:
           limits:

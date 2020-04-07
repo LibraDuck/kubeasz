@@ -30,7 +30,7 @@ spec:
       containers:
       - name: metrics-server
         #image: k8s.gcr.io/metrics-server-amd64:v0.3.6
-        image: mirrorgooglecontainers/metrics-server-amd64:v0.3.6
+        image: nenya.local:5000/iop/mirrorgooglecontainers/metrics-server-amd64:v0.3.6
         imagePullPolicy: IfNotPresent 
         command:
         - /metrics-server

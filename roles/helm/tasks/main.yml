@@ -37,11 +37,6 @@
 - name: 安装tiller
   shell: "{{ bin_dir }}/helm init \
         --history-max {{ history_max }} \
-        --tiller-tls \
-        --tiller-tls-verify \
-        --tiller-tls-cert {{ ca_dir }}/{{ tiller_cert_cn }}.pem \
-        --tiller-tls-key {{ ca_dir }}/{{ tiller_cert_cn }}-key.pem \
-        --tls-ca-cert {{ ca_dir }}/ca.pem \
         --service-account {{ tiller_sa }} \
         --tiller-namespace {{ helm_namespace }} \
         --tiller-image {{ tiller_image }} \
@@ -68,4 +63,4 @@
     dest: ~/.bashrc
     state: present
     regexp: "helm tls environment"
-    line: "export HELM_TLS_ENABLE=true"
+    line: "export HELM_TLS_ENABLE=false"

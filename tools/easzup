@@ -71,7 +71,7 @@ KillMode=process
 WantedBy=multi-user.target
 EOF
 
-  # configuration for dockerd
+  # configuration for dockerd 管理节点的docker daemon.json
   echo "[INFO] generate docker config file"
   if [[ "$REGISTRY_MIRROR" == CN ]];then
     echo "[INFO] prepare register mirror for $REGISTRY_MIRROR"
@@ -82,6 +82,7 @@ EOF
     "https://docker.mirrors.ustc.edu.cn",
     "http://hub-mirror.c.163.com"
   ],
+  "insecure-registries": ["hub.local:9080", "nenya.local:5000"],
   "max-concurrent-downloads": 10,
   "log-driver": "json-file",
   "log-level": "warn",
